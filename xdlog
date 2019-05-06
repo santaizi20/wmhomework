@@ -1,0 +1,45 @@
+2019-05-06 15:56:09.192  INFO 10664 --- [main] com.xd.DemoApplication                   : Starting DemoApplication on PC-20160613CNLE with PID 10664 (E:\wmhomework\target\classes started by Administrator in E:\wmhomework)
+2019-05-06 15:56:09.194  INFO 10664 --- [main] com.xd.DemoApplication                   : No active profile set, falling back to default profiles: default
+2019-05-06 15:56:09.272  INFO 10664 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55a561cf: startup date [Mon May 06 15:56:09 CST 2019]; root of context hierarchy
+2019-05-06 15:56:10.678  INFO 10664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$693f2329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-06 15:56:11.083  INFO 10664 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-05-06 15:56:11.110  INFO 10664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-06 15:56:11.111  INFO 10664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.39
+2019-05-06 15:56:11.296  INFO 10664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
+2019-05-06 15:56:11.296  INFO 10664 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2026 ms
+2019-05-06 15:56:11.467  INFO 10664 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-06 15:56:11.474  INFO 10664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-06 15:56:11.475  INFO 10664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-06 15:56:11.475  INFO 10664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-06 15:56:11.475  INFO 10664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-06 15:56:11.757  INFO 10664 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-05-06 15:56:11.788  INFO 10664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-06 15:56:11.846  INFO 10664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-05-06 15:56:11.848  INFO 10664 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-06 15:56:11.853  INFO 10664 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-05-06 15:56:11.887  INFO 10664 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-05-06 15:56:12.586  INFO 10664 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-06 15:56:12.985  INFO 10664 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-05-06 15:56:13.613  INFO 10664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-06 15:56:14.330  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55a561cf: startup date [Mon May 06 15:56:09 CST 2019]; root of context hierarchy
+2019-05-06 15:56:14.380  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/log]}" onto public java.lang.String com.xd.controller.TestController.test6()
+2019-05-06 15:56:14.381  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aaa]}" onto public java.lang.String com.xd.controller.TestController.test1()
+2019-05-06 15:56:14.383  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test]}" onto public com.xd.vo.ShopVo com.xd.controller.TestController.test5(com.xd.vo.ShopVo)
+2019-05-06 15:56:14.383  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/exe]}" onto public void com.xd.controller.TestController.test4()
+2019-05-06 15:56:14.383  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bbb]}" onto public com.xd.vo.ShopVo com.xd.controller.TestController.test2()
+2019-05-06 15:56:14.384  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ccc]}" onto public com.xd.vo.ResultVo com.xd.controller.TestController.test3(com.xd.vo.ShopVo)
+2019-05-06 15:56:14.386  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-06 15:56:14.386  INFO 10664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-06 15:56:14.411  INFO 10664 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 15:56:14.411  INFO 10664 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 15:56:14.424  INFO 10664 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2019-05-06 15:56:14.441  INFO 10664 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-06 15:56:14.456  INFO 10664 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2019-05-06 15:56:14.657  INFO 10664 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-06 15:56:14.692  INFO 10664 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-05-06 15:56:14.695  INFO 10664 --- [main] com.xd.DemoApplication                   : Started DemoApplication in 5.991 seconds (JVM running for 7.002)
+2019-05-06 15:56:16.616  INFO 10664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-06 15:56:16.616  INFO 10664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-06 15:56:16.635  INFO 10664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
