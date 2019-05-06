@@ -11,6 +11,7 @@ import com.xd.vo.ResultVo;
 import com.xd.vo.ShopOrderVo;
 import com.xd.vo.ShopRecordListVo;
 import com.xd.vo.ShopVo;
+import lombok.extern.slf4j.Slf4j;
 import org.mockito.internal.matchers.Null;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,7 @@ import java.util.List;
  */
 
 @RestController
+@Slf4j
 public class TestController {
     @Autowired
     ShopRepository shopRepository;
@@ -36,6 +38,17 @@ public class TestController {
     @RequestMapping("aaa")
     public String test1() {
         return "hello";
+    }
+
+    @RequestMapping("test")
+    public ShopVo test5(@RequestBody ShopVo shopVo) {
+        return shopVo;
+    }
+
+    @RequestMapping("log")
+    public String test6() {
+        log.debug("debug测试日志消息");
+        return "ok";
     }
 
     @RequestMapping("exe")
@@ -54,14 +67,13 @@ public class TestController {
     }
 
 
-
     @RequestMapping("ccc")
     public ResultVo test3(@RequestBody ShopVo shopVo) {
         ResultVo resultVo = new ResultVo();
         ShopOrderVo shopOrderVo = new ShopOrderVo();
         Shop shop = new Shop();
         BeanUtils.copyProperties(shopVo, shop);
-        if (shopVo.getShopOrderName().isEmpty()){
+        if (shopVo.getShopOrderName().isEmpty()) {
             throw new NullException(String.valueOf(shop.getId()));
         }
         List<ShopRecordListVo> ls = shopVo.getShopRecordList();
