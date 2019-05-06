@@ -1,7 +1,9 @@
 package com.xd.controller;
 
+import com.xd.Util.RandomNumUtil;
 import com.xd.bean.Shop;
 import com.xd.bean.ShopRecord;
+import com.xd.enumeration.MsgEnum;
 import com.xd.exception.NullException;
 import com.xd.repository.ShopRecordRepository;
 import com.xd.repository.ShopRepository;
@@ -70,7 +72,8 @@ public class TestController {
         }
         shopRepository.save(shop);
         resultVo.initresultVo(resultVo);
-        shopOrderVo.setShopOrderId("1557061085629");
+        resultVo.setMsg(MsgEnum.成功.toString());
+        shopOrderVo.setShopOrderId(String.valueOf(RandomNumUtil.random()));
         resultVo.setBody(shopOrderVo);
         return resultVo;
     }

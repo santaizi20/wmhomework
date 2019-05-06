@@ -1,5 +1,6 @@
 package com.xd.vo;
 
+import com.xd.enumeration.MsgEnum;
 import lombok.Data;
 
 /**
@@ -16,6 +17,7 @@ public class ResultVo<T> {
     public static void initresultVo(ResultVo resultVo) {
         resultVo.setSuccess(true);
         resultVo.setErrorCode("-1");
-        resultVo.setMsg("成功");
+
+        resultVo.setMsg(MsgEnum.失败.toString());
     }
 }
