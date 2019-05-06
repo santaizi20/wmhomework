@@ -1,6 +1,6 @@
 package com.xd.controller;
 
-import com.xd.Util.RandomNumUtil;
+import com.xd.util.RandomNumUtil;
 import com.xd.bean.Shop;
 import com.xd.bean.ShopRecord;
 import com.xd.enumeration.MsgEnum;
@@ -12,10 +12,8 @@ import com.xd.vo.ShopOrderVo;
 import com.xd.vo.ShopRecordListVo;
 import com.xd.vo.ShopVo;
 import lombok.extern.slf4j.Slf4j;
-import org.mockito.internal.matchers.Null;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

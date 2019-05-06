@@ -1,4 +1,4 @@
-package com.xd.Util;
+package com.xd.util;
 
 /**
  * Created by mac on 2019/5/6.
